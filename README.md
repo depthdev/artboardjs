@@ -1,2 +1,2 @@
 # artboardjs
-Canvas artboard with mouse &amp; multi-touch support
+<summary>Canvas artboard with mouse &#38; multi-touch support.</summary>
