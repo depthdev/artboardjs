@@ -1,9 +1,9 @@
 # ArtboardJS
 <summary>Canvas artboard with mouse &#38; multi-touch support.</summary>
 
-<a href="http://codepen.io/depthdev/pen/XpxKPx" target="_blank"><img src="http://cdn.depthdev.com/artboard-1.0.0-screenshot.png"></a>
-
 [Demo](http://codepen.io/depthdev/pen/XpxKPx)
+
+<a href="http://codepen.io/depthdev/pen/XpxKPx" target="_blank"><img src="http://cdn.depthdev.com/artboard-1.0.0-screenshot.png"></a>
 
 ## Docs
 
