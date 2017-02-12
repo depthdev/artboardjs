@@ -8,9 +8,11 @@
 ## Docs
 
 ### Init
-const ab = new Artboard(*element [, options [, error]]*);
+`const ab = new Artboard(element [, options [, error]]);`  
 
-const	ab = new Artboard(**canvas**, {  
+OR  
+
+<sub>const	ab = new Artboard(**canvas**, {  
 &#160;&#160;&#160;&#160;**width:** document.documentElement.clientWidth, *// int*  
 &#160;&#160;&#160;&#160;**height:** document.documentElement.clientWidth * (9/16), *// int*  
 &#160;&#160;&#160;&#160;**multiTouch:** true, *// boolean*  
@@ -20,4 +22,26 @@ const	ab = new Artboard(**canvas**, {
 &#160;&#160;&#160;&#160;**radius:** 10, *// number*  
 &#160;&#160;&#160;&#160;**done:** doneCallbackFunc *// Called after playback finishes; or after restore, undo, redo, or stop is called*  
 &#160;&#160;}, **errorCallbackFunc**  *// Called if the HTML5 canvas isn't supported on their browser*  
-);
+);</sub>
+
+### Returned Object Methods
+`adjust` Accepts and object with one or more of the following properties: *width*, *height*, *multiTouch*, *rainbow*, *color*, *glow*, *radius*, and *done*  
+`backup` Returns an object literal backup to the developer  
+`clear` Clears out the canvas and history, but keeps all settings and the size  
+`deleteSaved` Deletes all saved artboards  
+`destroy` Remove all listeners including window and document  
+`hardReset` Resets everything to the defaults unless and equivalent adjust object properties and/or reset object properties override them  
+`image` Downloads a PNG of the artboard  
+`play` Clears the canvas and re-paints the users whole picture exactly as drawn with animation  
+`redo` Redoes a move and returns the current state  
+`reset` Resets the canvas and can re-adjust the width/height  
+`restore` Restores a saved artboard if one exists in localStorage; returns a provided callback with the value *true* or just *true*, otherwise it returns a provided callback with the value of *false* or just *false*  
+`save` Saves the current artboard to localStorage to be restored later with the restore method  
+`saveAs` Saves the current named artboard to localStorage to be restored later with the restore method  
+`saved` Returns an array of the user-defined named artboards  
+`size` Returns the size of the current artboard in bytes in it's saved format (which is somewhat larger than the JavaScript multi-dimensional array in memory)  
+`stop` Stops the current animation playback  
+`undo` Undoes a moves and returns the current state  
+
+### Styles
+Recommend this setting to trigger the scrollbar before calculation unless your content is always shorter than the browser viewport: `body{min-height:101vh;}`
