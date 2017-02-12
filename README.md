@@ -43,5 +43,12 @@ OR
 `stop` Stops the current animation playback  
 `undo` Undoes a moves and returns the current state  
 
+See the [demo](http://codepen.io/depthdev/pen/XpxKPx) for example API usage.
+
 ### Styles
 Recommend this setting to trigger the scrollbar before calculation unless your content is always shorter than the browser viewport: `body{min-height:101vh;}`
+
+---
+
+MIT License  
+Copyright (c) 2017 Depth Development
