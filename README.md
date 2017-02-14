@@ -37,11 +37,11 @@ OR
 
 `hardReset` Resets everything to the defaults unless and equivalent adjust object properties and/or reset object properties override them  
 
-`image` Downloads a PNG of the artboard  
+`image` Creates a PNG image of the canvas, renames it to an optional string provided, and downloads it  
 
 `play` Clears the canvas and re-paints the users whole picture exactly as drawn with animation  
 
-`redo` Redoes a move and returns the current state  
+`redo` Redoes a move (use the settings method to get the adjusted settings)  
 
 `reset` Resets the canvas and can re-adjust the width/height  
 
@@ -53,11 +53,13 @@ OR
 
 `saved` Returns an array of the user-defined named artboards  
 
+`settings` Returns an object with the current settings (most useful for the UI after an undo/redo)
+
 `size` Returns the size of the current artboard in bytes in it's saved format (which is somewhat larger than the JavaScript multi-dimensional array in memory)  
 
 `stop` Stops the current animation playback  
 
-`undo` Undoes a moves and returns the current state  
+`undo` Undoes a move (use the settings method to get the adjusted settings)  
 
 See the [demo](http://codepen.io/depthdev/pen/XpxKPx) for example API usage.
 
