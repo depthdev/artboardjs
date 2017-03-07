@@ -1,5 +1,5 @@
 /*!
-  ArtboardJS v1.1.0
+  ArtboardJS v1.1.1
   (c) 2017 Depth Development. http://depthdev.com
   License: MIT
 !*/
@@ -432,7 +432,7 @@
     function image(str) {
       this.a = document.createElement('a');
       this.a.href = canvas.toDataURL('image/png');
-      this.a.download = str || 'ArtboardJS';
+      this.a.download = str && typeof str === 'string' ? str : 'ArtboardJS';
       this.a.click();
       delete this.a;
     }
