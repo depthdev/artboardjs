@@ -3,7 +3,7 @@
 
 [Demo](http://codepen.io/depthdev/pen/XpxKPx)
 
-<a href="http://codepen.io/depthdev/pen/XpxKPx" target="_blank"><img src="http://cdn.depthdev.com/artboard-1.0.0-screenshot.png"></a>
+<a href="http://depthdev.com/modules" target="_blank"><img src="http://cdn.depthdev.com/artboard-1.0.0-screenshot.png"></a>
 
 ## Docs
 
