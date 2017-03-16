@@ -25,6 +25,8 @@ OR
 );</sub>
 
 ### Returned Object Methods
+NOTE: Most method calls return `true` (or an object); otherwise, they return `false` if playback is in progress or the method failed.
+
 `adjust` Accepts and object with one or more of the following properties: *width*, *height*, *multiTouch*, *rainbow*, *color*, *glow*, *radius*, and *done*  
 
 `backup` Returns an object literal backup to the developer  
